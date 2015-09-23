@@ -1,0 +1,20 @@
+
+<div id = "section">
+<h1> New Message</h1>
+<%= form_for :message do |f| %>
+<p>
+	<%= f.label  :Name %> <br>
+	<%= f.text_field :name %>
+</p>
+<p>
+	<%= f.label  :Email %> <br>
+	<%= f.text_field :email %>
+</p>
+<p>
+	<%= f.label  :Message %> <br>
+	<%= f.text_field :message %>
+</p>
+<%= f.submit %>
+<% end %>   
+
+</div>

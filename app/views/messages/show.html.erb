@@ -1,0 +1,23 @@
+
+<div id="header">
+<h1>Lavika Kurda</h1>
+</div>
+
+<div id="nav">
+<a href = "myprofile.html">About me</a><br>
+<a href = "educat">Education</a><br>
+<a href = "2048.html">Games</a><br>
+<%= link_to 'Contact Us', controller: 'messages' %>
+</div>
+<div id="section">
+Your message has been recieved.
+<br>
+We will get back to you shortly!
+<br>
+Please note that you message id is <%= render plain: params[:id] %> 
+</div>
+
+<div id="footer">
+
+</div>
+
