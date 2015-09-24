@@ -14,11 +14,11 @@
 
 <div id="nav">
 <%= link_to 'About me', controller: 'staticpages', action: 'myprofile'%><br>
-<%= link_to 'Education', controller: 'staticpages', action: 'education'%><br>
+<%= link_to 'Education', controller: 'staticpages', action: 'educate'%><br>
 <a href = "staticpages/2048.html" class = "link">Games</a><br>
 <ul>
-	<li><a href = "" class = "link">2048</a></li>
-	<li><a href = "" class = "link">2548</a></li>
+	<li><%= link_to '2048', controller: 'staticpages', action: '2048'%></li>
+	<li><%= link_to '2548', controller: 'staticpages', action: '2548'%></li>
 	<li><a href = "" class = "link">Color Flood</a></li>
 	</ul>
 <%= link_to 'Contact Us', controller: 'messages'%> <br>
