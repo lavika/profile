@@ -41,8 +41,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) 
-    position:relative;     
+    transform: translate(-50%, -50%); 
+    position: relative;     
 }
 #footer {
     background-color:#746A14;
