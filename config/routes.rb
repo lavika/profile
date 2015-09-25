@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   root 'staticpages#myprofile'
 
   resources :messages
+  resources :articles do 
+    resources :comments
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

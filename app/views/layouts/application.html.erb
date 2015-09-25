@@ -23,7 +23,9 @@ Games<br>
 	</ul>
 <%= link_to 'Contact Us', controller: 'messages'%> <br>
 
-<%= link_to 'Blogs', "#{Rails.env.development? ? 'http://localhost:3010/articles' : '/articles'}" %>
+<%= link_to 'Blogs', controller: 'articles' %>
+<!-- 
+"#{Rails.env.development? ? 'http://localhost:3010/articles' : '/articles'}" -->
 </div>
 
 <div id = "parent">
