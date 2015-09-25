@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  get 'staticpages/myprofile' 
-  get 'staticpages/educate'
-  get 'staticpages/2048'
-  get 'staticpages/2548'
+  get '/about_me' => 'staticpages#myprofile'
+  get '/academics' => 'staticpages#educate'
+  get '/games/2048' => 'staticpages#2048'
+  get '/games/2548' => 'staticpages#2548'
+  get '/contact' => 'messages#index'
+  get '/blog' => 'articles#index'
 
   # You can have the root of your site routed with "root"
   root 'staticpages#myprofile'
